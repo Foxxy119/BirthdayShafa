@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Shafa Sayang!</title>
+    <title>Happy Birthday!</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font: Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -34,7 +38,7 @@
             outline: none;
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
-            border-radius: 20%; /* Makes the button circular */
+            border-radius: 50%; /* Makes the button circular */
             display: inline-block;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -44,23 +48,8 @@
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 0 50px rgba(255, 255, 255, 0.8);
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .button-container {
-            animation: fadeIn 1s ease-in-out;
-        }
-
         .down-arrow {
-            margin-top: 7px;
+            margin-top: 15px;
             width: 30px;
             height: 30px;
             animation: bounce 1s infinite;
@@ -79,18 +68,17 @@
         }
 
         h2 {
-            font-family: 'Pacifico', cursive; /* Example unique font */
+            font-family: 'Pacifico', cursive; /* Unique font from Google Fonts */
             margin-top: 10px;
-            color: #0a0a0a;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <div class="button-container">
-        <h2>Open Here</h2>
-        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 18l-6-6h12z'/></svg>" alt="Down Arrow" class="down-arrow">
-        <br>
         <button class="birthday-button" onclick="goToNextPage()"></button>
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 18l-6-6h12z'/></svg>" alt="Down Arrow" class="down-arrow">
+        <h2>Open Here</h2>
     </div>
 
     <script>
